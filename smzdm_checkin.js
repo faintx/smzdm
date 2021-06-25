@@ -234,7 +234,7 @@ function WebGetCurrentInfo(smzdmCookie) {
   const toUser = process.env.TO_USER;
   const agentId = process.env.AGENT_ID;
   const cookie = process.env.COOKIE;
-  if (!corpid || !corpsecret || !toUser || !agentId || !COOKIE) {
+  if (!corpid || !corpsecret || !toUser || !agentId || !cookie) {
     magicJS.logError('请检查Github Action secret变量！')
     process.exit(1)
   }

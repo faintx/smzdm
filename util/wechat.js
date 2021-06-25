@@ -8,8 +8,7 @@ function getTime() {
 }
 
 function getPushBody(title, subTile, content, params) {
-    // + !subTile || subTile == '' ? '' : (subTile + '\n') 
-    desc = '<div class=\"gray\">' + getTime() + '</div><div class=\"normal\">' + '</div><div class=\"highlight\">' + content + '</div>';
+    desc = '<div class=\"gray\">' + getTime() + '</div><div class=\"normal\">' + subTile == '' ? '' : (subTile + '\n') + '</div><div class=\"highlight\">' + content + '</div>';
     return JSON.stringify({
         "chatid": "CHATID",
         "msgtype": "textcard",
@@ -26,9 +25,7 @@ function getPushBody(title, subTile, content, params) {
 }
 
 function sendMsg(title, subTile, content, params) {
-    console.log('params: ' + params)
-    corpid = 'ww74c7200c13352a24'
-    corpsecret = 'pT1Az_S6L5SIyRlBMr3_rki_V2kp45dvbq6QCLT1Uk8'
+    console.log('params: ' + params.corpid + params.corpsecret)
     let accesTokenOption = {
         url: `https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${params.corpid}&corpsecret=${params.corpsecret}`,
     }
@@ -55,7 +52,6 @@ function push(access_token, b) {
         body: b
     }
     magicJS.post(pushOption, (err, resp, data) => {
-        console.log(err);
         if (JSON.parse(data).errcode == 0) {
             magicJS.notify('发送消息成功！', '', data)
         }
