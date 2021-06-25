@@ -1,4 +1,4 @@
-# Bilibili动态推送脚本
+# SMZDM Web端和App端签到脚本
 
 ---
 <p style="text-align: center">
