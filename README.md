@@ -28,3 +28,4 @@ Fork [此项目](https://github.com/xiaokexiang/smzdm) ，并添加如下`Secret
 |   TO_USER   |         通讯录界面可查（可为`@all`全部用户都会收到）         |
 |  AGENT_ID   |                  上步创建的应用详情界面可查                  |
 |  COOKIE   |                  访问<a href="https://www.smzdm.com/">SMZDM</a>复制cookie                  |
+
