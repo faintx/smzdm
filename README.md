@@ -13,9 +13,9 @@
 <b>此脚本只用于学习、测试使用，请勿将此项目的任何内容用于商业或非法目的！本人概不负责！</b>
 
 ## 特别感谢
-- <b>@blackmatrix7</b>
-- <b>@wangfei021325</b>
-- <b>@chavyleung</b>
+- <b>[@blackmatrix7](https://github.com/blackmatrix7)</b>
+- <b>[@wangfei021325](https://github.com/wangfei021325)</b>
+- <b>[@chavyleung](https://github.com/chavyleung)</b>
 
 ### 推送参数配置
 
